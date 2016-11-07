@@ -1,2 +1,1 @@
-# travis
-discovering .travis.yml
+# Test repository to discover Travis CI
