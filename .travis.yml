@@ -8,7 +8,7 @@ python:
 #    - pip install -r requirements-test.txt
 
 script:
-    pytest
+    py.test
 # 
 # env:
 # - TOXENV=py27-d16
