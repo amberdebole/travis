@@ -4,11 +4,10 @@ python:
 - "2.7"
 - "3.5"
 
-#install:
-#    - pip install -r requirements-test.txt
+install: pip install tox-travis
 
-script:
-    py.test
+script: tox
+
 # 
 # env:
 # - TOXENV=py27-d16
@@ -16,18 +15,13 @@ script:
 # - TOXENV=py34-d17
 # - TOXENV=cov
 # 
-# branches:
-#     only:
-#     - master
+branches:
+  only:
+    - master
 #     - develop
-# 
-# install: pip install --quiet --use-mirrors tox
-# 
-# script: tox
-# 
+
 # after_script:
 # - if [ $TOXENV == "cov" ]; then
 #     pip install --quiet --use-mirrors coveralls;
 #     coveralls;
 #   fi
-
